@@ -6,7 +6,7 @@ permalink: /about/
 
 Welcome to the EDITH blog 😈
 
-The name EDITH came from the movie called "IRON MAN", which means "Even Death I am The Hero".
+The name EDITH comes from the movie called "IRON MAN", which means "Even Death I am The Hero".
 
 For my blog, it means "Even Dying I am commiTing the gitHub" (sorry..ㅋ)
 
