@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to the EDITH blog 😈
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The name EDITH came from the movie called "IRON MAN", which means "Even Death I am The Hero".
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+For my blog, it means "Even Dying I am conTributing the gitHub" (sorry..ㅋ)
 
+I hope you enjoy my blog
 
-[jekyll-organization]: https://github.com/jekyll
