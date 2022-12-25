@@ -1,6 +1,11 @@
-# 2022-12-25-#841-Keys-and-Rooms
+---
+layout: post
+title:  "[LeetCode]2022-12-25-#841-keys-and-rooms"
+date:   2022-12-25 13:01:04 +0900
+categories: jekyll update
+---
 
-# [문제]([https://leetcode.com/problems/keys-and-rooms/description/](https://leetcode.com/problems/keys-and-rooms/description/))
+# [문제](https://leetcode.com/problems/keys-and-rooms/description/)
 
 There are `n` rooms labeled from `0` to `n - 1` and all the rooms are locked except for room `0`. Your goal is to visit all the rooms. However, you cannot enter a locked room without having its key.
 
