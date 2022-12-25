@@ -29,7 +29,7 @@ Explanation: There are two paths from vertex 0 to vertex 2:
 
 ### example 2:
 
-![find-path](2022-12-24-#1971-Find-if-Path-Exists-in-Graph%20a2cf2b80b74a4b49b01236ef491b5c0b/Untitled.png)
+![find-path.png](./find-path.png)
 
 ```
 Input: n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5
