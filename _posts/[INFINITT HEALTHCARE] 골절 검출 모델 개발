@@ -1,0 +1,69 @@
+# Fracture Detection
+
+👋 Detecting Fracture based on YOLOv8
+
+## 👩‍💻 Model Code Manual
+
+[Train Manual](https://rogue-impatiens-fb5.notion.site/Train-Manual-a9718ebcd726419f98314fce8777ef8e?pvs=4)
+
+[Directory Manual](https://rogue-impatiens-fb5.notion.site/Directory-Manual-c6d5af2033b542d9ae83fe7b01ceacff?pvs=4)
+
+
+## 📂Dataset
+
+- Train dataset: 17,045
+- Validation dataset: 4,871
+- Test dataset: 2,432
+
+![Untitled](./img/Untitled.png)
+
+- Dataset: GRAZPEDWRI + FracAtlas
+
+| Name       | number of datasets        | ref. |
+|------------|---------------------------|------|
+| GRAZPEDWRI | 20,327 (Fracture: 18,090) | [GRAZPEDWRI paper](https://www.nature.com/articles/s41597-022-01328-z)     |
+| FracAtlas  | 4,084 (Fracture: 818)     | [FracAtlas paper](https://www.nature.com/articles/s41597-023-02432-4)    |
+
+- Dataset file path:
+  
+  ```
+	GRAZFRAC_Dataset
+	    └── train  
+	    └── valid
+	    └── test
+	         ├── labels.cache
+	         ├── images
+	         │    ├── 0001_1297860435_01_WRI-L2_M014.png # GRAZPEDWRI-DX
+	         │    ├── IMG0000272.png                     # FracAtlas
+	         │    ├── ...
+	         │    └── ...
+	         │   
+	         └── labels
+	              ├── 0001_1297860435_01_WRI-L2_M014.txt # GRAZPEDWRI-DX
+	              ├── IMG0000272.txt                     # FracAtlas
+	              ├── ...
+	              └── ...
+	            
+  ```
+
+## 🚀 Model: YOLOV8
+
+- **Base model: yolov8** **ref.** [YOLOv8 Official GitHub](https://github.com/ultralytics/ultralytics.git)
+    - 2차 developed model: yolov8
+    - 3차 developed model: yolov8 + sharpening
+    - 4차 developed model: yolov8 + sharpening + data augmentation
+- **model output**
+    - predicted box의 xyxy 좌표 > 0으로 채워진 box생성 > conf threshold를  넘는 pixel만 filtering
+
+## ✅ Module
+
+### Data preprocessing
+
+- 수정 사항: 두 데이터의 class id가 다름 → 3번으로 통일 
+- **Sharpening**
+    - `GaussianBlur` > `CLAHE`
+- **Data Augmentation**
+    - `RandomBrightness`
+    - `RandomSizedCrop`
+
+## 💯 Result
